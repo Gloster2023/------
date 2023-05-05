@@ -1,0 +1,31 @@
+
+
+.cars{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.car_toggle{
+    display: none;
+    
+}
+
+.auto_name{
+    padding: 20px;
+    order: 1;
+}
+
+.car_content{
+    display: none;
+    order: 2;
+    width: 100%;
+}
+
+.car_toggle:checked + .auto_name{
+    border: 2px solid blue;
+}
+
+.car_toggle:checked + .auto_name + .car_content{
+    display: block;
+}
