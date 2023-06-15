@@ -1,0 +1,86 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+aside, nav, footer, header, section{
+    display: block;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+.img{
+    vertical-align: top;
+}
+
+
+body {
+font-family: "Lato";
+}
+
+._container{
+    max-width: 1130px;
+    padding: 0px 15px;
+}
+
+.wrapper{
+    overflow: hidden;
+    min-height: 100%;
+}
+
+/* .ibg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    img{display: none;}
+} */
+
+    .ibg{
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    }
+    
+    .ibg img{
+    
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    }
+
+    .page{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .main-screen{
+    flex: 1 0 100%;
+    position: relative;
+    }
+
+.main-screen__bg{
+    background-image: url(./image/Layer\ 7.png);
+    max-width: 100%;
+    height: 100%;
+}

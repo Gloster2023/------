@@ -1,0 +1,43 @@
+/* *{
+   margin: 0; 
+   padding: 0;
+  
+}
+
+.conteiner {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.header {
+    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
+    background-size: cover;
+}
+
+.logo {
+    display: flex;
+}
+.menu {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-list{
+    list-style: none;
+    display: flex;    
+}
+
+.menu-link{
+    color: dimgray;
+    text-decoration: dashed;
+    padding: 0.5em;
+}
+.header-text {
+    text-align: center;
+    color: darkgrey;
+    text-transform: uppercase;
+    font-size: 30px;
+} */
