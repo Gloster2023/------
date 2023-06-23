@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+}
+
+li, ul, a{
+    list-style: none;
+    text-decoration: none;
+}
+
+/* &subset=cyrillic-ext -------для кириллицы*/ 
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+h1, h2, h3, h4,h5, h6{
+font-family: inherit;
+}
+
+body {
+    font-family: "Heebo";
+    color: #21243d;
+    }
+
+
+._container{
+    max-width: 856px;
+    display: flex;
+}
+/* max-width: 1152px min-width: 320px */
+
+._container-header{
+    max-width: 1052px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 10px;       /*паддинги что бы не прилипало меню к стенке при уменьшении ширины*/
+}
+
+.icon-menu{
+    display: none;
+}
+
+.menu-list {
+    height: 82px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0px;
+}
+
+.menu-list li{
+     margin: 0px 0px 0px 33px;
+     height: 82px;
+     align-items: center;
+     display: flex;
+     justify-content: flex-end;
+     padding: 10px 0px;
+}
+
+.menu-link {
+    font-size: 20px;
+    font-weight: 500;
+    color:inherit;
+    transition:  color 0.3s  ease-in 0s;
+}
+
+.menu-link:hover{
+    color: #ff6464;
+}
+
+.page {
+    flex: 1 1 auto;
+    padding: 90px 0px 0px 0px;
+}
+.hello {
+    display: flex;
+    justify-content: center;
+    padding: 38px 0px 70px 0px;
+}
+
+.hello__content {
+    padding: 18px 110px 0px 0px;
+    flex: 1 1 auto;
+    align-items: flex-start;                 /*для безопасности если будут изменения*/
+}
+
+.hello__content *:last-child{               /* у любого последнего элемента в Hello__content не будет висячего отступа*/
+    margin-bottom: 0;
+}
+
+.Hello__title {
+    font-size: 44px;
+    line-height: calc(60 / 44 * 100%);
+    font-weight: 700;
+}
+.title {
+   margin: 0px 0px 25px 0px;
+}
+.Hello__text {
+    font-size: 16px;
+    line-height: calc(23 / 16 * 100%);
+}
+.text {
+    margin: 0px 0px 35px 0px;
+}
+
+.btn {
+    display: inline-flex;
+    padding: 0px 20px;
+    background-color: #ff6464;
+    border-radius: 2px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 47px;
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 145%;
+    color: white;
+    transition: background-color 0.3s ease-in 0s;
+}
+
+.btn:hover{
+    background-color: #ff4949;
+}
+
+._avatar {
+    height: 243px;
+    flex: 0 0 243px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: -5px 13px 0px 0px #edf7fa;
+}
+
+._avatar img{
+    max-width: 100%;
+}
+
+
+.recent-posts{
+    display: flex;
+    background-color: #edf7fa;
+    padding: 25px 0px 30px 0px;
+    justify-content: center;
+}
+
+
+
+._container2 {
+    width: 856px;
+}
+.recent-posts__header {
+    display: flex;
+}
+.title-posts {
+    flex:1 1 auto;
+    margin: 0px 0px 20px 0px;
+    font-size: 22px;
+    padding-right: 20px;        /* чтобы заголовокне слипся с view-all если будет много текста*/
+}
+.recent-posts__view-all {
+    color: #008acc;
+    font-size: 16px;
+    line-height: 23px;
+    white-space: nowrap;        /*чтобы не сломать*/
+}
+
+.title-posts{
+    font-size: 22px;
+}
+.recent-posts__items {
+    display: flex;
+    margin: 0px -10px;
+}
+.recent-posts__column {
+    flex: 0 1 50%;
+    padding: 0px 10px;
+}
+
+.recent-posts__titl{
+    color:inherit;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: calc(38 / 26 * 100%);
+    transition: all 0.3s ease 0s;
+    display: inline-block;
+}
+
+
+.recent-posts__titl:hover{
+    color: #ff6464;
+}
+
+
+.recent-post {
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(187, 255, 250, 0.25);
+    border-radius: 4px;
+    padding: 20px;
+    height: 100%;           /* чтобы при увеличение кол-ва текста колонки были одного размера*/
+}
+.recent-posts__info {
+    font-size: 18px;
+    line-height: calc(26 / 18 * 100%);
+    margin: 0px 0px 15px 0px;
+}
+
+.recent-posts__info span{
+    margin: 0px 10px;
+}
