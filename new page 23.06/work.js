@@ -187,11 +187,7 @@ function sumTwoSmallestNumbers(numbers) {
   }
 
 
-  function filter_list(l) {
-    return  l.forEach((item) => typeof item == "string" ? l.splice(item,1) : item)
-    // for (let i =0; i< l.length; i++){
-    //     if(typeof l[i] == 'string'){
-    //         l.splice(i,1)
-    //      }
-    // }return l
-}
+// --------вывести только цифры из массива-----------------------
+function filter_list(l) {
+  return l.filter( str => typeof str != 'string');
+  }
