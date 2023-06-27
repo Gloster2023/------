@@ -141,24 +141,57 @@ function findUniq(arr) {
   }
 //--------------------------------------------------------------------------------------------------
 
+// ---------------------встречается нечетное количество раз--------------------не решил-------------
+
+function findOdd(A) {
+    const count = (arr, val) => arr.filter((item) => item === val).length; // эта функция дает длину массива одинаковых элементов
+    let target = 0;
+    A.forEach((arrNum) => {                     //обходим массив поэлементно
+      if (count(A, arrNum) % 2 !== 0) {         //если в массиве если такие элементы, которых нечетное количество
+        target = arrNum;                        // тогда мы их выводим
+      }
+    });
+    return target;
+  }
+
+// --------------складывает два числа, выдает сумму в бинарном виде--------------------------
+
+function addBinary(a,b) {
+    let res = a + b;
+    let arr = [];
+   while(res > 1){
+    arr.push(res % 2);
+    res = Math.floor(res / 2);
+    if(res == 1){
+        arr.push('1');
+        break
+    }if(res == 2){
+        arr.push('10')
+        break
+    }
+}
+return ''+arr.reverse().join('')
+}
+// -----------------------------------------------------------------------------------------
+//-----------------------сложить наименьшие числа в массиве---------------------------------
 
 
+function sumTwoSmallestNumbers(numbers) { 
+    function compareNumeric(a,b){           // неизвестная херня как то сортирует по возрастанию
+        if(a>b)return 1;
+        if(a==b) return 0;
+        if (a<b) return -1;
+    }
+    numbers.sort(compareNumeric);
+      return numbers[0] + numbers[1]        // складываем два самых маленьких элемента
+  }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  function filter_list(l) {
+    return  l.forEach((item) => typeof item == "string" ? l.splice(item,1) : item)
+    // for (let i =0; i< l.length; i++){
+    //     if(typeof l[i] == 'string'){
+    //         l.splice(i,1)
+    //      }
+    // }return l
+}
