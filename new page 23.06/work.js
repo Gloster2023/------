@@ -189,5 +189,5 @@ function sumTwoSmallestNumbers(numbers) {
 
 // --------вывести только цифры из массива-----------------------
 function filter_list(l) {
-  return l.filter( str => typeof str != 'string');
+  return l.filter( item => typeof item != 'string');
   }
