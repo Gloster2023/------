@@ -191,3 +191,14 @@ function sumTwoSmallestNumbers(numbers) {
 function filter_list(l) {
   return l.filter( item => typeof item != 'string');
   }
+
+
+// --------------дурацкое задание буквы идут последовтельными группами--------------------
+ var uniqueInOrder=function(iterable){
+  let arr = [];
+      for(let i =0; i <iterable.length; i++){
+        if(iterable[i] != iterable[i+1]){
+          arr.push(iterable[i])}
+      }
+   return arr
+}
