@@ -204,7 +204,3 @@ function filter_list(l) {
 }
 
 
-function deleteNth(arr,n){
-
-  const count(arr,n)
-}
