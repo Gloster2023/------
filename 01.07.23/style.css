@@ -1,0 +1,132 @@
+*{
+    font-family: "Lato";
+    padding: 0;
+    margin: 0;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(46, 48, 49);
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.header .container{
+    width: 900px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-menu{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    /* box-sizing: border-box; */
+}
+
+.navbar-menu li{
+    padding: 15px;
+    transition: all 0.1s ease-in;
+    border: 2px solid transparent;  /* устанавливает прозрачный (transparent) бордер*/
+}
+
+.navbar-menu li:hover{
+    border: 2px solid chocolate;
+}
+
+.navbar-menu li:hover a{    /* чтобы включалось вместе с li*/
+    color:chocolate;
+}
+
+.navbar-menu li a{
+    font-size: 20px;
+}
+
+.Logo{
+    font-weight: 900;
+    color: chocolate;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.navbar-menu li a:hover{
+    color: chocolate;
+}
+
+.title-text{
+    padding: 20px 10px 0px 10px;
+}
+
+/* ---------------------------------section---------------------------------------- */
+
+._container{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section{
+    background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(0, 0, 0, 0.8)),         /*градиент для bacgrounda*/
+    url(./1646923965_2-amiel-club-p-motomasterskaya-v-garazhe-interer-krasivo-2.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    min-width: 100%;
+    background-color: black;
+}
+
+.section-title{
+    font-size: 26px;
+    text-align: center;
+    color: #fff;
+    padding: 50px 0px;
+}
+.column-img{
+    padding: 15px;
+}
+.column_img{
+    max-width: 100%;
+}
+.column-title{
+    text-transform: uppercase;
+    color: chocolate;
+    padding-top: 10px;
+}
+
+.column-text{
+    color:#fff;
+    font-size: 18px;
+    padding: 8px;
+}
+
+.section-box{
+    display: flex;
+}
+
+.column-section{
+    text-align: center;
+    margin: 30px;
+    box-sizing: border-box;
+    height: 100%;
+    border: 2px double chocolate;
+    flex: 0 0 40%;
+
+}
+
+.column-text span{
+    color: crimson;
+    text-transform:capitalize;
+}
