@@ -202,3 +202,9 @@ function filter_list(l) {
       }
    return arr
 }
+
+
+function deleteNth(arr,n){
+
+  const count(arr,n)
+}
