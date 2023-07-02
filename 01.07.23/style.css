@@ -96,9 +96,19 @@ a{
 }
 .column-img{
     padding: 15px;
+    /* height: 200px;                      задаем родителя высоту и OVERFLOW: HIDDEN */
+    overflow: hidden;
+    padding: 0px 0px 56% 0px;               /* для самой охуенности добавляем позишин релати и падин нижний в процентах*/
+    position: relative;
 }
 .column_img{
-    max-width: 100%;
+    width: 100%;                        /* Изображение по 100% и OBJECT-FIT: COVER*/
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;                 /* здесь позишн абсолют и топ ноль, лефт ноль*/
+    top:0;
+    left:0;
 }
 .column-title{
     text-transform: uppercase;
@@ -113,20 +123,45 @@ a{
 }
 
 .section-box{
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .column-section{
     text-align: center;
     margin: 30px;
     box-sizing: border-box;
-    height: 100%;
+    max-height: 100%;
     border: 2px double chocolate;
     flex: 0 0 40%;
-
 }
 
 .column-text span{
     color: crimson;
     text-transform:capitalize;
+}
+
+
+
+@media(max-width: 900px){
+    .column-section{
+        text-align: center;
+        margin: 30px;
+        box-sizing: border-box;
+        max-height: 100%;
+        border: 2px double chocolate;
+        flex: 1 0 90%;
+    }
+}
+
+@media(max-width:650px){
+    .navbar-wrap{
+        visibility: hidden;
+    }
+    .container{
+       margin-left: auto;
+       margin-right: auto;
+    }
 }
