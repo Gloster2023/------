@@ -62,6 +62,7 @@ a{
     color: chocolate;
     font-size: 26px;
     text-transform: uppercase;
+    padding: 0px 20px;
 }
 
 .navbar-menu li a:hover{
@@ -127,6 +128,7 @@ a{
     margin-right: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .column-section{
@@ -158,10 +160,43 @@ a{
 
 @media(max-width:650px){
     .navbar-wrap{
-        visibility: hidden;
+        display: none;
     }
-    .container{
-       margin-left: auto;
-       margin-right: auto;
+    .header .container{
+        justify-content: center;
     }
+    .title-text{
+    font-size: 30px;
+    }
+    .section-title{
+        padding: 0px 15px;
+    }
+}
+
+@media(max-width:500px){
+    .title-text{
+        font-size: 24px;
+    }
+    .column-section{
+        flex: 1 1 40%;
+    }
+}
+
+/* -------------------footer------------------------------------------------- */
+
+.footer{
+    background-color: black;
+    border: 2px solid chocolate;
+}
+
+.social-network{
+    color:#fff;
+}
+
+.footer-container{
+    padding: 20px 50px;
+}
+
+.social-icon{
+    padding: 5px 0px;
 }
